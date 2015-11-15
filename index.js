@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var bodyParser     	= require("body-parser");
+var bodyParser = require("body-parser");
 
 app.use( bodyParser.urlencoded({ extended: false }) );
 app.use( bodyParser.json() );
@@ -21,7 +21,7 @@ app.use('/api', 	require('./controllers/api'));
 
 
 
-var server = app.listen(3000, function () {
+var server = app.listen(1962, function () {
   var host = server.address().address;
   var port = server.address().port;
 
